@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<link href="https://p.outsiderschool.com.br/favicon-os.svg" rel="icon" type="image/svg+xml"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#0a0a0a" name="theme-color"/>
+<meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
+<meta content="no-cache" http-equiv="Pragma"/>
+<meta content="0" http-equiv="Expires"/>
+<title>A Chave · Mentoria de aceleração digital | Outsider School</title>
+<meta content="Mentoria de 12 meses com Bruno Gomes e a Outsider School. 15+ especialistas, 40+ nichos validados, metodologia que já gerou R$100 milhões em resultado real." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="A Chave · Mentoria de aceleração digital | Outsider School" property="og:title"/>
+<meta content="Acompanhamento individual de 12 meses. Agentes de IA. Plano de Ação personalizado. Aplicação por curadoria." property="og:description"/>
+<meta content="assets/img/hero-2.webp" property="og:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<!-- Hero AVIF preload (mobile-first; desktop é baixado pelo <picture>) -->
+<link as="image" fetchpriority="high" href="assets/img/hero-mobile.avif" media="(max-width: 640px)" rel="preload" type="image/avif"/>
+<link as="image" fetchpriority="high" href="assets/img/hero-2.avif" media="(min-width: 641px)" rel="preload" type="image/avif"/>
+<!-- Fontes — pesos reduzidos (axis variável removido = ~30% menor) -->
+<link href="css2_ce01cec6" rel="stylesheet"/>
+<link href="chave/assets/css/style_ae525809.css" rel="stylesheet"/>
+<!-- Pixel X App - START (defer pra depois do load = não bloqueia paint) -->
+<script type="text/javascript">
+addEventListener('load',function(){var e=location.href,t=document.title,n=Date.now(),o=document.createElement('script');o.src='https://pxa.outsiderschool.com.br/remote?url='+encodeURIComponent(e)+'&title='+encodeURIComponent(t)+'&time='+n,o.async=!0,document.head.appendChild(o)})
+</script>
+<!-- Pixel X App - END -->
+<script async="" data-utmify-prevent-subids="" data-utmify-prevent-xcod-sck="" defer="" src="scripts/utms/latest.js"></script>
+<script src="/config-loader.js"></script>
+</head>
+<body>
+<!-- SVG Icon definitions — referenced via <svg><use/></svg> -->
+<svg aria-hidden="true" height="0" style="position:absolute" width="0">
+<defs>
+<!-- Crown (direcionamento estratégico) -->
+<symbol fill="none" id="i-crown" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M2 7l5 4 5-7 5 7 5-4v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7z"></path>
+</symbol>
+<!-- Users (time de sucesso) -->
+<symbol fill="none" id="i-users" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+<circle cx="9" cy="7" r="4"></circle>
+<path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+</symbol>
+<!-- Chart (análises) -->
+<symbol fill="none" id="i-chart" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M3 3v18h18"></path>
+<path d="M7 14l4-4 4 4 5-6"></path>
+</symbol>
+<!-- Clipboard (plano de ação) -->
+<symbol fill="none" id="i-clipboard" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M9 2h6a2 2 0 0 1 2 2v1h2a1 1 0 0 1 1 1v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a1 1 0 0 1 1-1h2V4a2 2 0 0 1 2-2z"></path>
+<path d="M9 12h6M9 16h4"></path>
+</symbol>
+<!-- Calendar (implementation day) -->
+<symbol fill="none" id="i-calendar" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<rect height="18" rx="2" width="18" x="3" y="4"></rect>
+<path d="M16 2v4M8 2v4M3 10h18"></path>
+</symbol>
+<!-- Target (desafios) -->
+<symbol fill="none" id="i-target" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<circle cx="12" cy="12" r="6"></circle>
+<circle cx="12" cy="12" r="2"></circle>
+</symbol>
+<!-- Sparkles (IA) -->
+<symbol fill="none" id="i-sparkles" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"></path>
+<path d="M19 14l.8 2.4L22 17l-2.2.6L19 20l-.8-2.4L16 17l2.2-.6z"></path>
+</symbol>
+<!-- Message (whatsapp) -->
+<symbol fill="none" id="i-message" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+</symbol>
+<!-- Check square (checklists) -->
+<symbol fill="none" id="i-check" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M9 11l3 3L22 4"></path>
+<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+</symbol>
+<!-- Graduation cap (professores) -->
+<symbol fill="none" id="i-cap" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M22 10L12 4 2 10l10 6 10-6z"></path>
+<path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"></path>
+</symbol>
+<!-- Trophy -->
+<symbol fill="none" id="i-trophy" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
+</symbol>
+<!-- Rocket (onboarding) -->
+<symbol fill="none" id="i-rocket" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+<path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+<path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+</symbol>
+<!-- Stethoscope (diagnóstico) -->
+<symbol fill="none" id="i-stetho" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M6 2v6a4 4 0 0 0 8 0V2"></path>
+<circle cx="20" cy="14" r="2"></circle>
+<path d="M10 12v4a4 4 0 0 0 8 0v-2"></path>
+</symbol>
+<!-- Map-pin (plano) -->
+<symbol fill="none" id="i-pin" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</symbol>
+<!-- Wrench (execução) -->
+<symbol fill="none" id="i-wrench" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+</symbol>
+<!-- Award -->
+<symbol fill="none" id="i-award" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<circle cx="12" cy="8" r="7"></circle>
+<path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.11"></path>
+</symbol>
+</defs>
+</svg>
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+<div class="container header__row">
+<a aria-label="A Chave" class="brand" href="./">
+<img alt="" data-cms-img="logo" height="40" src="chave/assets/img/logo-chave.svg" width="40"/>
+<span class="brand__name" data-cms="brand-name">A CHAVE</span>
+</a>
+<div class="brand-right">
+<span class="powered">Powered by</span>
+<strong>OutsiderSchool<sup>©</sup></strong>
+</div>
+</div>
+</header>
+<!-- ============ HERO ============ -->
+<section class="hero">
+<div class="hero__media">
+<picture>
+<source data-cms-img="hero-mobile" media="(max-width: 640px)" srcset="chave/assets/img/hero-mobile.avif" type="image/avif"/>
+<source media="(max-width: 640px)" srcset="chave/assets/img/hero-mobile.webp" type="image/webp"/>
+<source srcset="chave/assets/img/hero-2.avif" type="image/avif"/>
+<source srcset="chave/assets/img/hero-2.webp" type="image/webp"/>
+<img alt="Bruno Gomes em palco de evento da Outsider School" data-cms-img="hero-desktop" decoding="async" fetchpriority="high" src="chave/assets/img/hero-2.webp"/>
+</picture>
+</div>
+<div class="hero__overlay"></div>
+<div class="container hero__content">
+<span class="eyebrow" data-cms="hero-eyebrow">Mentoria de aceleração · 12 meses</span>
+<h1 class="display">
+      <span data-cms="hero-h1-line1">Todo mundo te ensinou a</span> <em data-cms="hero-h1-em">"vender todos os dias"</em>.
+      <span class="display--muted" data-cms="hero-h1-muted">Mas alguém te ajudou a implementar na prática?</span>
+</h1>
+<p class="hero__lede" data-cms="hero-lede">
+      Seu conhecimento vale mais do que suas vendas mostram. A Chave muda isso: com Inteligência Artificial (ChatGPT, Claude e outras), <strong>15+ especialistas</strong>, <strong>40+ nichos validados</strong> e uma metodologia que já gerou <strong>R$ 100 milhões</strong> em resultado real.
+    </p>
+<div class="hero__cta">
+<button class="btn btn--cta" data-cms-cta="0" data-open-modal="apply" type="button">Quero que analisem meu caso</button>
+</div>
+</div>
+<a aria-label="Rolar para a próxima seção" class="hero__scroll" href="#prova-social">
+<span></span>
+</a>
+</section>
+<!-- ============ PROVA SOCIAL ============ -->
+<section class="section section--tight prova" id="prova-social">
+<div class="container">
+<p class="eyebrow center">Bruno Gomes já deu aula em</p>
+<div class="prova__logos">
+<img alt="Anhanguera" data-cms-img="anhanguera" loading="lazy" src="chave/assets/img/anhanguera.webp"/>
+<img alt="Universidade de Fortaleza" data-cms-img="universidade-de-fortaleza" loading="lazy" src="chave/assets/img/universidade-de-fortaleza.webp"/>
+<img alt="Eduzz" data-cms-img="eduzz" loading="lazy" src="chave/assets/img/eduzz.webp"/>
+<img alt="Kiwify" data-cms-img="kiwify" loading="lazy" src="chave/assets/img/kiwify.webp"/>
+<img alt="ONM" data-cms-img="onm" loading="lazy" src="chave/assets/img/onm.webp"/>
+</div>
+</div>
+</section>
+<!-- ============ TWO COMMA CLUB — SHOWCASE ============ -->
+<section class="section section--dark two-comma">
+<div class="container">
+<div class="two-comma__grid">
+<div class="two-comma__media">
+<img alt="Two Comma Club Award" data-cms-img="two-comma" loading="lazy" src="chave/assets/img/two-comma.webp"/>
+</div>
+<div class="two-comma__copy">
+<p class="eyebrow">Prêmio internacional</p>
+<h2>Um dos poucos brasileiros <em>premiados no Two Comma Club Award</em></h2>
+<p class="lede">Bruno Gomes foi reconhecido por <strong>Russell Brunson</strong>, criador do ClickFunnels e referência mundial em marketing digital, por construir funis de vendas que ultrapassaram <strong>US$ 1 milhão</strong> em faturamento.</p>
+<button class="btn btn--cta" data-cms-cta="1" data-open-modal="apply" type="button">Quero aplicar o mesmo método</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ DEPOIMENTOS EM VÍDEO ============ -->
+<section class="section depoimentos-video">
+<div class="container container--narrow">
+<header class="section-head">
+<p class="eyebrow">Depoimentos em vídeo</p>
+<h2>Veja o que dizem os <em>membros do programa</em></h2>
+<p class="section-head__sub">Quem está vivendo a Chave por dentro contando o que mudou no negócio e na cabeça.</p>
+</header>
+<!-- YouTube facade — só carrega o iframe (~500KB) quando o usuário clicar -->
+<div class="yt-facade" data-video-id="27Q7dFhQdJo">
+<picture>
+<source srcset="vi_webp/27Q7dFhQdJo/maxresdefault.webp" type="image/webp"/>
+<img alt="Depoimentos dos membros da Chave" decoding="async" loading="lazy" src="vi/27Q7dFhQdJo/hqdefault.jpg"/>
+</picture>
+<button aria-label="Reproduzir vídeo de depoimentos" class="yt-facade__play" type="button">
+<svg aria-hidden="true" height="48" viewbox="0 0 68 48" width="68">
+<path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74 .06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.79 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"></path>
+<path d="M45 24L27 14v20" fill="#fff"></path>
+</svg>
+</button>
+</div>
+</div>
+</section>
+<!-- ============ PILARES ============ -->
+<section class="section pilares" id="programa">
+<div class="container">
+<header class="section-head">
+<p class="eyebrow">Os 4 pilares</p>
+<h2>O que <em>define</em> a experiência dentro do programa</h2>
+</header>
+<div class="pilares__grid">
+<article class="pilar">
+<div class="pilar__icon">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path>
+</svg>
+</div>
+<div class="pilar__num">01</div>
+<h3>Acompanhamento individual e em grupo</h3>
+<p>12 meses ao lado da nossa equipe de tutores, estrategistas e do próprio Bruno, com checkpoints regulares de progresso.</p>
+</article>
+<article class="pilar">
+<div class="pilar__icon">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M9 2h6a2 2 0 0 1 2 2v1h2a1 1 0 0 1 1 1v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a1 1 0 0 1 1-1h2V4a2 2 0 0 1 2-2z"></path>
+<path d="M9 12h6M9 16h4"></path>
+</svg>
+</div>
+<div class="pilar__num">02</div>
+<h3>Plano de Ação Personalizado</h3>
+<p>Um roteiro executável construído para o <em>seu</em> negócio, não um curso genérico. Começa já na primeira semana.</p>
+</article>
+<article class="pilar">
+<div class="pilar__icon">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"></path>
+<path d="M19 14l.8 2.4L22 17l-2.2.6L19 20l-.8-2.4L16 17l2.2-.6z"></path>
+</svg>
+</div>
+<div class="pilar__num">03</div>
+<h3>Agentes de IA no ChatGPT e Claude</h3>
+<p>Skills, prompts e agentes criados pela Outsider para acelerar sua execução de copy, funil, tráfego e análise.</p>
+</article>
+<article class="pilar">
+<div class="pilar__icon">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M3 3v18h18"></path>
+<path d="M7 14l4-4 4 4 5-6"></path>
+</svg>
+</div>
+<div class="pilar__num">04</div>
+<h3>Direcionamento de estrategistas 7 dígitos</h3>
+<p>Análises individuais gravadas cobrindo conteúdo, copy, tráfego e funis. Correção de rota, não mais achismo.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- ============ RESULTADOS REAIS · DEPOIMENTO PRINTS ============ -->
+<section class="section section--dark resultados">
+<div class="container">
+<header class="section-head">
+<p class="eyebrow">Depoimentos</p>
+<h2>Resultados reais. <em>Nomes reais.</em></h2>
+<p class="section-head__sub">Veja o que acontece quando o sistema funciona de verdade.</p>
+</header>
+<div class="resultados__grid">
+<img alt="Depoimento de aluno" data-cms-img="depoimento-04" loading="lazy" src="chave/assets/img/depoimento-04.webp"/>
+<img alt="Depoimento de aluno" data-cms-img="depoimento-05" loading="lazy" src="chave/assets/img/depoimento-05.webp"/>
+<img alt="Depoimento de aluno" data-cms-img="depoimento-06" loading="lazy" src="chave/assets/img/depoimento-06.webp"/>
+<img alt="Depoimento de aluno" data-cms-img="depoimento-07" loading="lazy" src="chave/assets/img/depoimento-07.webp"/>
+<img alt="Depoimento de aluno" data-cms-img="depoimento-08" loading="lazy" src="chave/assets/img/depoimento-08.webp"/>
+<img alt="Depoimento de aluno" data-cms-img="depoimento-09" loading="lazy" src="chave/assets/img/depoimento-09.webp"/>
+<img alt="Depoimento de aluno" data-cms-img="depoimento-10" loading="lazy" src="chave/assets/img/depoimento-10.webp"/>
+<img alt="Depoimento de aluno" data-cms-img="depoimento-11" loading="lazy" src="chave/assets/img/depoimento-11.webp"/>
+<img alt="Depoimento de aluno" data-cms-img="depoimento-12" loading="lazy" src="chave/assets/img/depoimento-12.webp"/>
+</div>
+<div class="section__cta">
+<button class="btn btn--cta" data-cms-cta="2" data-open-modal="apply" type="button">Quero resultados como esses</button>
+</div>
+</div>
+</section>
+<!-- ============ QUEM JÁ PASSOU ============ -->
+<section class="section alunos">
+<div class="container">
+<header class="section-head">
+<p class="eyebrow">Mentorados</p>
+<h2>Quem já <em>passou</em> pelos nossos programas</h2>
+<p class="section-head__sub">Mais de 30 pessoas envolvidas com o sucesso dentro do programa, e mentorados espalhados por todo o Brasil.</p>
+</header>
+<div class="alunos__grid">
+<figure class="aluno">
+<img alt="Isadora Duarte" data-cms-img="isadora-duarte" loading="lazy" src="chave/assets/img/isadora-duarte.webp"/>
+<figcaption>Isadora Duarte</figcaption>
+</figure>
+<figure class="aluno">
+<img alt="Milena Nóbrega" data-cms-img="milena-nobrega" loading="lazy" src="chave/assets/img/milena-nobrega.webp"/>
+<figcaption>Milena Nóbrega</figcaption>
+</figure>
+<figure class="aluno">
+<img alt="Talita Marques" data-cms-img="talita-marques" loading="lazy" src="chave/assets/img/talita-marques.webp"/>
+<figcaption>Talita Marques</figcaption>
+</figure>
+<figure class="aluno">
+<img alt="Camila Nardi" data-cms-img="camila-nardi" loading="lazy" src="chave/assets/img/camila-nardi.webp"/>
+<figcaption>Camila Nardi</figcaption>
+</figure>
+<figure class="aluno">
+<img alt="Júlia da Silva" data-cms-img="julia-pretti" loading="lazy" src="chave/assets/img/julia-pretti.webp"/>
+<figcaption>Júlia da Silva</figcaption>
+</figure>
+<figure class="aluno">
+<img alt="Kau Miranda" data-cms-img="kau-miranda" loading="lazy" src="chave/assets/img/kau-miranda.webp"/>
+<figcaption>Kau Miranda</figcaption>
+</figure>
+<figure class="aluno">
+<img alt="Maia Santos" data-cms-img="maia-santos" loading="lazy" src="chave/assets/img/maia-santos.webp"/>
+<figcaption>Maia Santos</figcaption>
+</figure>
+<figure class="aluno">
+<img alt="Marcella Estevs" data-cms-img="marcella-estevs" loading="lazy" src="chave/assets/img/marcella-estevs.webp"/>
+<figcaption>Marcella Estevs</figcaption>
+</figure>
+<figure class="aluno">
+<img alt="Vika Ferrari" data-cms-img="vika-ferrari" loading="lazy" src="chave/assets/img/vika-ferrari.webp"/>
+<figcaption>Vika Ferrari</figcaption>
+</figure>
+<figure class="aluno">
+<img alt="Bruno Rodrigues" data-cms-img="bruno-rodrigues" loading="lazy" src="chave/assets/img/bruno-rodrigues.webp"/>
+<figcaption>Bruno Rodrigues</figcaption>
+</figure>
+<figure class="aluno">
+<img alt="Adriel Araújo" data-cms-img="adriel-araujo-power-ppt" loading="lazy" src="chave/assets/img/adriel-araujo-power-ppt.webp"/>
+<figcaption>Adriel Araújo</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<!-- ============ JORNADA ============ -->
+<section class="section section--gray jornada">
+<div class="container">
+<header class="section-head">
+<p class="eyebrow">Sua jornada</p>
+<h2>Sua rota de crescimento <em>dentro da Chave</em></h2>
+<p class="section-head__sub">Do onboarding aos primeiros 6 dígitos: cada etapa tem suporte individual.</p>
+</header>
+<ol class="timeline">
+<li class="timeline__step">
+<div class="timeline__marker"><span class="timeline__num">01</span></div>
+<div class="timeline__card">
+<div class="timeline__icon"><svg><use href="#i-rocket"></use></svg></div>
+<h3>Onboarding individual</h3>
+<p>Você e sua equipe recebem as orientações iniciais para dar o start mais rápido e eficiente.</p>
+</div>
+</li>
+<li class="timeline__step">
+<div class="timeline__marker"><span class="timeline__num">02</span></div>
+<div class="timeline__card">
+<div class="timeline__icon"><svg><use href="#i-stetho"></use></svg></div>
+<h3>Diagnóstico de negócio</h3>
+<p>Análise profunda e individual do seu operacional para identificar gargalos e oportunidades.</p>
+</div>
+</li>
+<li class="timeline__step">
+<div class="timeline__marker"><span class="timeline__num">03</span></div>
+<div class="timeline__card">
+<div class="timeline__icon"><svg><use href="#i-pin"></use></svg></div>
+<h3>Plano de Ação Personalizado</h3>
+<p>Próximas etapas estratégicas documentadas com prazos, responsáveis e métricas.</p>
+</div>
+</li>
+<li class="timeline__step">
+<div class="timeline__marker"><span class="timeline__num">04</span></div>
+<div class="timeline__card">
+<div class="timeline__icon"><svg><use href="#i-wrench"></use></svg></div>
+<h3>Execução com checklist</h3>
+<p>Implementation Day mensal + desafios quinzenais de implementação (Operação Código-Mestre).</p>
+</div>
+</li>
+<li class="timeline__step">
+<div class="timeline__marker"><span class="timeline__num">05</span></div>
+<div class="timeline__card">
+<div class="timeline__icon"><svg><use href="#i-chart"></use></svg></div>
+<h3>Análises individuais</h3>
+<p>Chave Mestra: 12 meses de análises gravadas cobrindo copy, funis, tráfego e conteúdo.</p>
+</div>
+</li>
+<li class="timeline__step">
+<div class="timeline__marker"><span class="timeline__num">06</span></div>
+<div class="timeline__card">
+<div class="timeline__icon"><svg><use href="#i-trophy"></use></svg></div>
+<h3>Resultado &amp; premiação</h3>
+<p>Você não só aplica: você ganha reconhecimento. Mentorados recebem placas e prêmios por metas batidas.</p>
+</div>
+</li>
+</ol>
+<div class="section__cta">
+<button class="btn btn--cta" data-cms-cta="3" data-open-modal="apply" type="button">Quero fazer essa jornada</button>
+</div>
+</div>
+</section>
+<!-- ============ SISTEMA INTEIRO MONTADO · LIGHT SECTION ============ -->
+<section class="section section--light incluso">
+<div class="container">
+<header class="section-head">
+<p class="eyebrow">O que está incluso</p>
+<h2>Um sistema inteiro <em>montado</em> para você</h2>
+<p class="section-head__sub">A Outsider School não vende método. Entrega o sistema operando, com 15+ pessoas focadas no seu resultado.</p>
+</header>
+<div class="incluso__grid">
+<article class="inc-card">
+<div class="inc-card__icon"><svg><use href="#i-crown"></use></svg></div>
+<h3>Direcionamento estratégico</h3>
+<p>Bruno Gomes e estrategistas 7 dígitos no digital te orientando pessoalmente.</p>
+</article>
+<article class="inc-card">
+<div class="inc-card__icon"><svg><use href="#i-users"></use></svg></div>
+<h3>Time de Sucesso do Cliente</h3>
+<p>Equipe dedicada te acompanhando em seu grupo individual durante 12 meses.</p>
+</article>
+<article class="inc-card">
+<div class="inc-card__icon"><svg><use href="#i-chart"></use></svg></div>
+<h3>Análises individuais</h3>
+<p>Chave Mestra: gravadas e documentadas com IA, cobrindo copy, funis, tráfego e conteúdo.</p>
+</article>
+<article class="inc-card">
+<div class="inc-card__icon"><svg><use href="#i-clipboard"></use></svg></div>
+<h3>Plano de Ação Personalizado</h3>
+<p>Trilha do Conhecimento + roteiro executável pro seu negócio específico.</p>
+</article>
+<article class="inc-card">
+<div class="inc-card__icon"><svg><use href="#i-calendar"></use></svg></div>
+<h3>Implementation Day</h3>
+<p>1 dia inteiro por mês para você sair com tudo pronto e rodando.</p>
+</article>
+<article class="inc-card">
+<div class="inc-card__icon"><svg><use href="#i-target"></use></svg></div>
+<h3>Desafios Código-Mestre</h3>
+<p>Quinzenais: Funil Irado, Mini-aula Mestre, Social Selling, Tráfego Direto.</p>
+</article>
+<article class="inc-card">
+<div class="inc-card__icon"><svg><use href="#i-sparkles"></use></svg></div>
+<h3>Agentes de IA</h3>
+<p>ChatGPT e Claude com prompts, skills e fluxos prontos pra execução.</p>
+</article>
+<article class="inc-card">
+<div class="inc-card__icon"><svg><use href="#i-message"></use></svg></div>
+<h3>Grupo exclusivo WhatsApp</h3>
+<p>Comunidade ativa com outros mentorados no mesmo nível de ambição.</p>
+</article>
+<article class="inc-card">
+<div class="inc-card__icon"><svg><use href="#i-check"></use></svg></div>
+<h3>Checklists &amp; tutoriais</h3>
+<p>Guias rápidos pra consultar e implementar sempre que tiver dúvida.</p>
+</article>
+<article class="inc-card">
+<div class="inc-card__icon"><svg><use href="#i-cap"></use></svg></div>
+<h3>Professores convidados</h3>
+<p>Mastermind Outsider: aulas exclusivas com nomes que você já ouviu falar.</p>
+</article>
+</div>
+<div class="section__cta">
+<button class="btn btn--cta" data-cms-cta="4" data-open-modal="apply" type="button">Quero acesso ao sistema completo</button>
+</div>
+</div>
+</section>
+<!-- ============ PREMIAÇÕES ============ -->
+<section class="section premiacoes">
+<div class="container">
+<header class="section-head">
+<div class="section-head__icon"><svg><use href="#i-trophy"></use></svg></div>
+<p class="eyebrow">Premiação</p>
+<h2>Os prêmios que os mentorados <em>já receberam</em></h2>
+<p class="section-head__sub">O próximo pode ser o seu.</p>
+</header>
+<div class="premiacoes__grid">
+<figure class="premio">
+<img alt="Premiação recebida por mentorado" data-cms-img="premiacao-1" loading="lazy" src="chave/assets/img/premiacao-1.webp"/>
+</figure>
+<figure class="premio">
+<img alt="Premiação recebida por mentorado" data-cms-img="premiacao-2" loading="lazy" src="chave/assets/img/premiacao-2.webp"/>
+</figure>
+<figure class="premio">
+<img alt="Premiação recebida por mentorado" data-cms-img="premiacao-3" loading="lazy" src="chave/assets/img/premiacao-3.webp"/>
+</figure>
+<figure class="premio">
+<img alt="Premiação recebida por mentorado" data-cms-img="premiacao-4" loading="lazy" src="chave/assets/img/premiacao-4.webp"/>
+</figure>
+<figure class="premio">
+<img alt="Premiação recebida por mentorado" data-cms-img="premiacao-5" loading="lazy" src="chave/assets/img/premiacao-5.webp"/>
+</figure>
+<figure class="premio">
+<img alt="Premiação recebida por mentorado" data-cms-img="premiacao-6" loading="lazy" src="chave/assets/img/premiacao-6.webp"/>
+</figure>
+</div>
+</div>
+</section>
+<!-- ============ GARANTIA 90 DIAS ============ -->
+<section class="section section--dark garantia">
+<div class="container">
+<div class="garantia__grid">
+<div aria-hidden="true" class="garantia__seal">
+<svg viewbox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<path d="M 120,120 m -92,0 a 92,92 0 1,1 184,0" id="seal-text-top"></path>
+<path d="M 120,120 m -88,0 a 88,88 0 1,0 176,0" id="seal-text-bottom"></path>
+</defs>
+<!-- anel externo decorativo -->
+<circle cx="120" cy="120" fill="none" opacity="0.35" r="112" stroke="#ebd197" stroke-width="0.5"></circle>
+<circle cx="120" cy="120" fill="none" r="105" stroke="#ebd197" stroke-width="1.5"></circle>
+<!-- texto curvado em cima -->
+<text fill="#ebd197" font-family="Manrope, sans-serif" font-size="11" letter-spacing="6">
+<textpath href="#seal-text-top" startoffset="50%" text-anchor="middle">GARANTIA · OUTSIDER SCHOOL</textpath>
+</text>
+<!-- texto curvado embaixo -->
+<text fill="#ebd197" font-family="Manrope, sans-serif" font-size="11" letter-spacing="6" opacity="0.7">
+<textpath href="#seal-text-bottom" startoffset="50%" text-anchor="middle">★ COMPROMISSO COM RESULTADO ★</textpath>
+</text>
+<!-- borda interna -->
+<circle cx="120" cy="120" fill="rgba(235,209,151,0.06)" opacity="0.6" r="78" stroke="#ebd197" stroke-width="1"></circle>
+<circle cx="120" cy="120" fill="none" opacity="0.5" r="73" stroke="#ebd197" stroke-width="0.5"></circle>
+<!-- estrela superior -->
+<g fill="#ebd197" opacity="0.85" transform="translate(120, 60)">
+<polygon points="0,-7 2,-2 7,-2 3,1 5,6 0,3 -5,6 -3,1 -7,-2 -2,-2"></polygon>
+</g>
+<!-- número 90 -->
+<text fill="#ebd197" font-family="Fraunces, serif" font-size="68" font-weight="300" letter-spacing="-2" text-anchor="middle" x="120" y="138">90</text>
+<!-- "DIAS" -->
+<text fill="#ebd197" font-family="Manrope, sans-serif" font-size="13" font-weight="500" letter-spacing="7" text-anchor="middle" x="120" y="165">DIAS</text>
+<!-- linhas decorativas laterais -->
+<line opacity="0.5" stroke="#ebd197" stroke-width="1" x1="55" x2="78" y1="120" y2="120"></line>
+<line opacity="0.5" stroke="#ebd197" stroke-width="1" x1="162" x2="185" y1="120" y2="120"></line>
+</svg>
+</div>
+<div class="garantia__copy">
+<p class="eyebrow">Garantia exclusiva</p>
+<h2>90 dias para comprovar resultado, <em>ou ganha 3 meses extras</em></h2>
+<p>
+          Nós prezamos pelo seu resultado. <strong>A Chave é a única mentoria do mercado com garantia de 90 dias.</strong>
+          Se você implementar tudo que ensinamos (os funis, as estratégias, a trilha completa) durante esses 90 dias
+          e ainda assim não conseguir gerar vendas, te damos <strong>mais 3 meses de acesso ao programa</strong>, sem cobrar nada extra.
+        </p>
+<div class="garantia__cta">
+<button class="btn btn--cta btn--lg" data-cms-cta="5" data-open-modal="apply" type="button">
+            Quero aplicar agora
+          </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ FAQ ============ -->
+<section class="section faq">
+<div class="container container--narrow">
+<header class="section-head">
+<p class="eyebrow">FAQ</p>
+<h2>Perguntas <em>frequentes</em></h2>
+<p class="section-head__sub">As dúvidas mais comuns sobre o programa.</p>
+</header>
+<div class="faq__list">
+<details class="faq__item">
+<summary>Para quem é A Chave?</summary>
+<div class="faq__answer">
+<p>Para empreendedores digitais que já têm um produto, serviço ou autoridade construída e querem escalar com método, não com achismo. Funciona melhor pra quem já fatura algo (ainda que pequeno) e quer acelerar para 6/7 dígitos com funis perpétuos, IA e acompanhamento de perto.</p>
+</div>
+</details>
+<details class="faq__item">
+<summary>Quanto tempo dura o programa?</summary>
+<div class="faq__answer">
+<p>12 meses de acompanhamento contínuo. Esse é o tempo que consideramos suficiente para você implementar a metodologia, validar funis, ajustar tráfego e construir um sistema sustentável de vendas.</p>
+</div>
+</details>
+<details class="faq__item">
+<summary>Como funciona o acompanhamento?</summary>
+<div class="faq__answer">
+<p>Você tem acesso a: análises individuais gravadas (Chave Mestra), Implementation Day mensal, desafios quinzenais (Operação Código-Mestre), grupo exclusivo de WhatsApp, time de Sucesso do Cliente dedicado, e direcionamento direto do Bruno e dos estrategistas 7 dígitos. Tudo isso durante os 12 meses.</p>
+</div>
+</details>
+<details class="faq__item">
+<summary>E se eu não conseguir resultado?</summary>
+<div class="faq__answer">
+<p>A Chave tem <strong>garantia de 90 dias</strong>. Se nesse período você implementar tudo que ensinamos e mesmo assim não gerar vendas, te damos <strong>3 meses extras de acesso</strong> ao programa sem custo adicional. É a única mentoria do mercado com esse compromisso.</p>
+</div>
+</details>
+<details class="faq__item">
+<summary>Preciso ter conhecimento prévio em IA, copy ou tráfego?</summary>
+<div class="faq__answer">
+<p>Não. O programa cobre desde o básico (com a Trilha do Conhecimento) até estratégias avançadas. Quem está começando aprende do zero, e quem já está rodando refina e escala. Nossos agentes de IA (ChatGPT e Claude) também aceleram a curva de aprendizado.</p>
+</div>
+</details>
+<details class="faq__item">
+<summary>É um programa por curadoria. Como faço pra entrar?</summary>
+<div class="faq__answer">
+<p>Sim: A Chave é por aplicação. Você preenche o formulário aqui na página, nosso time analisa seu caso em até 48h e, se houver fit, agendamos uma call individual com um dos nossos estrategistas para apresentar o programa em detalhes.</p>
+</div>
+</details>
+<details class="faq__item">
+<summary>Posso aplicar mesmo se já tenho um produto rodando há muito tempo?</summary>
+<div class="faq__answer">
+<p>Pode (e talvez seja exatamente o que você precisa). Nossos mentorados vêm de todos os estágios: do iniciante validando o primeiro produto ao empreendedor faturando R$ 100k/mês querendo dobrar com sistema. Quanto mais avançado o ponto de partida, mais rápido o resultado.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+<!-- ============ WHATSAPP CTA FINAL ============ -->
+<section class="section section--gray wpp-cta">
+<div class="container container--narrow">
+<header class="section-head">
+<p class="eyebrow">Ainda tem dúvidas?</p>
+<h2>Fala direto com a gente <em>no WhatsApp</em></h2>
+<p class="section-head__sub">Nosso time tira qualquer dúvida sobre o programa, garantia, formato de pagamento e curadoria.</p>
+</header>
+<div class="wpp-cta__action">
+<a class="btn btn--whatsapp btn--lg" data-cms-href="whatsapp-url" href="https://wa.me/5585936180489?text=Oi!%20Tenho%20d%C3%BAvidas%20sobre%20A%20Chave" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="currentColor" height="24" viewbox="0 0 24 24" width="24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"></path>
+</svg>
+        <span data-cms="whatsapp-btn-text">Falar no WhatsApp agora</span>
+      </a>
+</div>
+</div>
+</section>
+<!-- ============ MODAL DE APLICAÇÃO ============ -->
+<div aria-labelledby="apply-modal-title" aria-modal="true" class="modal" hidden="" id="apply-modal" role="dialog">
+<div class="modal__backdrop" data-close-modal=""></div>
+<div class="modal__panel" role="document">
+<button aria-label="Fechar formulário" class="modal__close" data-close-modal="" type="button">
+<svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24" width="22">
+<path d="M18 6L6 18M6 6l12 12"></path>
+</svg>
+</button>
+<div class="modal__body">
+<header class="modal__head">
+<p class="eyebrow">Aplicação</p>
+<h2 data-cms="modal-title" id="apply-modal-title">Chegou a hora de fazer seus produtos digitais <em>trabalharem para você</em></h2>
+<p class="modal__sub" data-cms="modal-sub">A Chave é um programa por curadoria. Preencha abaixo e nosso time vai analisar seu caso em até 48 horas.</p>
+</header>
+<form class="form ia-form" id="apply" novalidate="">
+<div class="form__row">
+<label class="field">
+<span class="field__label">Nome completo</span>
+<input autocomplete="name" name="nome" placeholder="Seu nome" required="" type="text"/>
+</label>
+</div>
+<div class="form__row form__row--2">
+<label class="field">
+<span class="field__label">Email</span>
+<input autocomplete="email" name="email" placeholder="voce@email.com" required="" type="email"/>
+</label>
+<label class="field">
+<span class="field__label">WhatsApp</span>
+<input autocomplete="tel" name="phone" placeholder="+55 85 99999 9999" required="" type="tel"/>
+</label>
+</div>
+<div class="form__row">
+<label class="field">
+<span class="field__label">Instagram</span>
+<input name="instagram" placeholder="@seuinstagram" required="" type="text"/>
+</label>
+</div>
+<div class="form__row">
+<label class="field">
+<span class="field__label">Faturamento mensal atual</span>
+<select name="faturamento_mensal" required="">
+<option disabled="" selected="" value="">Selecione uma faixa</option>
+<option value="Até R$ 2.000,00">Até R$ 2.000,00</option>
+<option value="Entre R$ 2.000,00 e R$ 5.000,00">Entre R$ 2.000,00 e R$ 5.000,00</option>
+<option value="Entre R$ 5.000,00 e R$ 10.000,00">Entre R$ 5.000,00 e R$ 10.000,00</option>
+<option value="Entre R$ 10.000,00 e R$ 20.000,00">Entre R$ 10.000,00 e R$ 20.000,00</option>
+<option value="Entre R$ 20.000,00 e R$ 50.000,00">Entre R$ 20.000,00 e R$ 50.000,00</option>
+<option value="Entre R$ 50.000,00 e R$ 100.000,00">Entre R$ 50.000,00 e R$ 100.000,00</option>
+<option value="Acima de R$ 100.000,00">Acima de R$ 100.000,00</option>
+</select>
+</label>
+</div>
+<div class="form__row">
+<label class="field">
+<span class="field__label">Qual sua maior dificuldade hoje?</span>
+<textarea name="maior_dificuldade" placeholder="Conta pra gente em poucas linhas o que mais te trava hoje..." required="" rows="4"></textarea>
+</label>
+</div>
+<label aria-hidden="true" class="hp">
+          Não preencha: <input autocomplete="off" name="website" tabindex="-1" type="text"/>
+</label>
+<button class="btn btn--cta btn--block" type="submit">
+<span>Enviar minha aplicação</span>
+</button>
+<p class="form__note" data-cms="form-note">Ao enviar, você concorda em receber contato do nosso time pelo email e WhatsApp informados.</p>
+</form>
+</div>
+</div>
+</div>
+<!-- ============ FOOTER ============ -->
+<footer class="footer footer--os">
+<div class="container">
+<div aria-label="Outsider School" class="footer-logo">
+<img alt="" data-cms-img="logo-footer" src="chave/assets/img/OutsiderSchool-logo-completa.svg" style="display:inline-block; vertical-align:middle" width="140"/>
+</div>
+<p><span data-cms="footer-copyright">Copyright © 2026 — todos os direitos reservados.</span><br/>
+    <span data-cms="footer-cnpj">CNPJ: 45.441.456/0001-25 — Fortaleza/CE</span></p>
+<p class="footer-contact"><a data-cms-href="footer-email" href="mailto:contato@postarpravender.com">contato@postarpravender.com</a> · <a data-cms-href="footer-terms-url" href="#">Termos de uso &amp; Privacidade</a></p>
+</div>
+</footer>
+<a aria-label="Fale conosco pelo WhatsApp" class="whatsapp-fab" data-cms-href="whatsapp-fab-url" href="https://wa.me/5585936180489?text=Oi!%20Tenho%20d%C3%BAvidas%20sobre%20A%20Chave" rel="noopener" target="_blank" title="WhatsApp">
+<svg aria-hidden="true" fill="currentColor" height="28" viewbox="0 0 24 24" width="28">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"></path>
+</svg>
+</a>
+<script defer="" src="chave/assets/js/app_8e0e0627.js"></script>
+</body>
+</html>

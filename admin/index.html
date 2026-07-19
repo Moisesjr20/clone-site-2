@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CMS · A Chave</title>
+<link rel="stylesheet" href="admin.css"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════ LOGIN ═══════════════════════════════════════ -->
+<div id="login-screen">
+  <div class="login-box">
+    <h1>⚙ CMS · A Chave</h1>
+    <p>Insira a senha de acesso para continuar</p>
+    <div class="field">
+      <label for="pwd-input">Senha</label>
+      <input id="pwd-input" type="password" placeholder="••••••••••••" autocomplete="current-password"/>
+    </div>
+    <div id="login-error">Senha incorreta. Tente novamente.</div>
+    <button class="btn btn--primary btn--full" id="login-btn">Entrar</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ APP SHELL ═══════════════════════════════════ -->
+<div id="app">
+
+  <!-- Header -->
+  <header class="cms-header">
+    <span class="cms-header__brand">⚙ CMS · A Chave</span>
+    <div class="cms-header__actions">
+      <button class="btn btn--primary" id="save-btn">💾 Salvar</button>
+      <button class="btn btn--ghost"   id="reset-btn">↺ Restaurar padrão</button>
+      <button class="btn btn--ghost"   id="logout-btn">Sair</button>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="cms-sidebar">
+    <nav>
+      <button class="nav-item active" data-section="colors">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
+        Cores
+      </button>
+      <button class="nav-item" data-section="buttons">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="8" rx="4"/></svg>
+        Botões
+      </button>
+      <button class="nav-item" data-section="typography">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h10M4 17h6"/></svg>
+        Tipografia
+      </button>
+      <button class="nav-item" data-section="copy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        Textos
+      </button>
+      <button class="nav-item" data-section="images">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        Imagens
+      </button>
+      <button class="nav-item" data-section="video">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        Vídeo
+      </button>
+      <button class="nav-item" data-section="seo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        SEO
+      </button>
+    </nav>
+  </aside>
+
+  <!-- Main: editor + preview -->
+  <main class="cms-main">
+    <div class="cms-content">
+
+      <!-- ── CORES ──────────────────────────────────────────────────────── -->
+      <section id="sec-colors" class="cms-section active">
+        <div class="section-title">Cores</div>
+
+        <div class="field-group">
+          <div class="group-label">Fundos</div>
+          <div class="colors-grid" id="grid-bg"></div>
+        </div>
+        <div class="field-group">
+          <div class="group-label">Textos</div>
+          <div class="colors-grid" id="grid-text"></div>
+        </div>
+        <div class="field-group">
+          <div class="group-label">Destaque (Dourado)</div>
+          <div class="colors-grid" id="grid-accent"></div>
+        </div>
+        <div class="field-group">
+          <div class="group-label">Botão CTA</div>
+          <div class="colors-grid" id="grid-cta"></div>
+        </div>
+        <div class="field-group">
+          <div class="group-label">WhatsApp & Bordas</div>
+          <div class="colors-grid" id="grid-misc"></div>
+        </div>
+      </section>
+
+      <!-- ── BOTÕES ──────────────────────────────────────────────────────── -->
+      <section id="sec-buttons" class="cms-section">
+        <div class="section-title">Botões</div>
+
+        <div class="field-group">
+          <div class="group-label">Arredondamento (border-radius)</div>
+          <div class="slider-field">
+            <label>Botões e cards padrão <span id="lbl-radius">12px</span></label>
+            <input type="range" id="sl-radius" min="0" max="40" step="1" value="12"/>
+          </div>
+          <div class="slider-field">
+            <label>Cards grandes <span id="lbl-radius-lg">20px</span></label>
+            <input type="range" id="sl-radius-lg" min="0" max="60" step="1" value="20"/>
+          </div>
+          <div class="slider-field">
+            <label>Modal e elementos extra grandes <span id="lbl-radius-xl">28px</span></label>
+            <input type="range" id="sl-radius-xl" min="0" max="80" step="1" value="28"/>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <div class="group-label">Textos dos Botões CTA (abertura de formulário)</div>
+          <div id="cta-texts-fields"></div>
+        </div>
+
+        <div class="field-group">
+          <div class="group-label">Botão WhatsApp</div>
+          <div class="field">
+            <label>Texto do botão</label>
+            <input type="text" id="wpp-btn-text"/>
+          </div>
+          <div class="field">
+            <label>URL / Número (wa.me link)</label>
+            <input type="url" id="wpp-url"/>
+          </div>
+          <div class="field">
+            <label>URL do botão flutuante (FAB)</label>
+            <input type="url" id="wpp-fab-url"/>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── TIPOGRAFIA ─────────────────────────────────────────────────── -->
+      <section id="sec-typography" class="cms-section">
+        <div class="section-title">Tipografia</div>
+
+        <div class="field-group">
+          <div class="field">
+            <label>Fonte do corpo (parágrafos, labels)</label>
+            <select id="font-body">
+              <option value="'Manrope', system-ui, sans-serif">Manrope (padrão)</option>
+              <option value="'Inter', system-ui, sans-serif">Inter</option>
+              <option value="'Open Sans', system-ui, sans-serif">Open Sans</option>
+              <option value="'Roboto', system-ui, sans-serif">Roboto</option>
+              <option value="'Lato', system-ui, sans-serif">Lato</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Fonte dos títulos (hero, seções)</label>
+            <select id="font-display">
+              <option value="'Fraunces', Georgia, serif">Fraunces (padrão)</option>
+              <option value="'Playfair Display', Georgia, serif">Playfair Display</option>
+              <option value="'Cormorant Garamond', Georgia, serif">Cormorant Garamond</option>
+              <option value="'Libre Baskerville', Georgia, serif">Libre Baskerville</option>
+              <option value="'EB Garamond', Georgia, serif">EB Garamond</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <div class="group-label">Tamanhos</div>
+          <div class="slider-field">
+            <label>Texto base <span id="lbl-fs-body">1rem</span></label>
+            <input type="range" id="sl-fs-body" min="0.8" max="1.25" step="0.05" value="1"/>
+          </div>
+          <div class="slider-field">
+            <label>Título Hero (máximo) <span id="lbl-fs-xl">5rem</span></label>
+            <input type="range" id="sl-fs-xl" min="3" max="7" step="0.25" value="5"/>
+          </div>
+          <div class="slider-field">
+            <label>Subtítulos de seção (máximo) <span id="lbl-fs-lg">3.5rem</span></label>
+            <input type="range" id="sl-fs-lg" min="2" max="5" step="0.25" value="3.5"/>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── TEXTOS ─────────────────────────────────────────────────────── -->
+      <section id="sec-copy" class="cms-section">
+        <div class="section-title">Textos</div>
+
+        <div class="field-group">
+          <div class="group-label">Header</div>
+          <div class="field"><label>Nome da marca</label><input type="text" data-copy="brand-name"/></div>
+        </div>
+
+        <div class="field-group">
+          <div class="group-label">Seção Hero</div>
+          <div class="field"><label>Eyebrow</label><input type="text" data-copy="hero-eyebrow"/></div>
+          <div class="field"><label>Título — linha 1</label><input type="text" data-copy="hero-h1-line1"/></div>
+          <div class="field"><label>Título — destaque em itálico</label><input type="text" data-copy="hero-h1-em"/></div>
+          <div class="field"><label>Título — linha muted</label><textarea data-copy="hero-h1-muted"></textarea></div>
+          <div class="field"><label>Parágrafo (lede)</label><textarea rows="4" data-copy="hero-lede"></textarea></div>
+        </div>
+
+        <div class="field-group">
+          <div class="group-label">Modal de Aplicação</div>
+          <div class="field"><label>Título da modal</label><textarea data-copy="modal-title"></textarea></div>
+          <div class="field"><label>Subtítulo da modal</label><textarea data-copy="modal-sub"></textarea></div>
+          <div class="field"><label>Nota abaixo do formulário</label><textarea data-copy="form-note"></textarea></div>
+        </div>
+
+        <div class="field-group">
+          <div class="group-label">Rodapé</div>
+          <div class="field"><label>Copyright</label><input type="text" data-copy="footer-copyright"/></div>
+          <div class="field"><label>CNPJ / Endereço</label><input type="text" data-copy="footer-cnpj"/></div>
+          <div class="field"><label>Email de contato</label><input type="email" data-copy="footer-email"/></div>
+          <div class="field"><label>URL Termos de uso</label><input type="url" data-copy="footer-terms-url"/></div>
+        </div>
+      </section>
+
+      <!-- ── IMAGENS ────────────────────────────────────────────────────── -->
+      <section id="sec-images" class="cms-section">
+        <div class="section-title">Imagens</div>
+        <div id="img-grid" class="img-grid"></div>
+      </section>
+
+      <!-- ── VÍDEO ──────────────────────────────────────────────────────── -->
+      <section id="sec-video" class="cms-section">
+        <div class="section-title">Vídeo</div>
+        <div class="field-group">
+          <div class="field">
+            <label>ID do vídeo no YouTube</label>
+            <input type="text" id="youtube-id" placeholder="Ex: 27Q7dFhQdJo"/>
+          </div>
+          <div id="yt-preview" style="margin-top:.75rem;"></div>
+          <p style="color:var(--c-muted);font-size:.75rem;margin-top:.4rem;">Copie apenas o ID do vídeo (a parte após <code>v=</code> na URL do YouTube)</p>
+        </div>
+      </section>
+
+      <!-- ── SEO ────────────────────────────────────────────────────────── -->
+      <section id="sec-seo" class="cms-section">
+        <div class="section-title">SEO & Meta</div>
+        <div class="field-group">
+          <div class="field"><label>Título da página (aba)</label><input type="text" data-seo="title"/></div>
+          <div class="field"><label>Meta description</label><textarea data-seo="description"></textarea></div>
+          <div class="field"><label>OG Title (redes sociais)</label><input type="text" data-seo="og-title"/></div>
+          <div class="field"><label>OG Description</label><textarea data-seo="og-description"></textarea></div>
+        </div>
+        <div class="field-group">
+          <div class="group-label">Imagens de compartilhamento</div>
+          <div class="img-card">
+            <img id="og-image-preview" class="img-card__thumb" src="" alt="OG Image" style="object-fit:contain;"/>
+            <div class="img-card__body">
+              <span class="img-card__label">OG Image (1200×630)</span>
+              <div class="img-card__actions">
+                <label class="btn btn--ghost btn--sm" style="cursor:pointer;">
+                  Trocar <input type="file" data-upload-field="og-image" accept="image/*"/>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="img-card" style="margin-top:.75rem;">
+            <img id="favicon-preview" class="img-card__thumb" src="" alt="Favicon" style="object-fit:contain;"/>
+            <div class="img-card__body">
+              <span class="img-card__label">Favicon (SVG, PNG ou ICO)</span>
+              <div class="img-card__actions">
+                <label class="btn btn--ghost btn--sm" style="cursor:pointer;">
+                  Trocar <input type="file" data-upload-field="favicon" accept="image/*"/>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /cms-content -->
+
+    <!-- Preview iframe -->
+    <div class="cms-preview">
+      <div class="preview-label">Preview ao vivo</div>
+      <iframe id="preview-frame" src="/"></iframe>
+    </div>
+  </main>
+</div><!-- /app -->
+
+<div id="toast"></div>
+
+<script src="admin.js"></script>
+</body>
+</html>
