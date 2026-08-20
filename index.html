@@ -17,9 +17,8 @@
 <meta content="assets/img/hero-2.webp" property="og:image"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<!-- Hero AVIF preload (mobile-first; desktop é baixado pelo <picture>) -->
-<link as="image" fetchpriority="high" href="assets/img/hero-mobile.avif" media="(max-width: 640px)" rel="preload" type="image/avif"/>
-<link as="image" fetchpriority="high" href="assets/img/hero-2.avif" media="(min-width: 641px)" rel="preload" type="image/avif"/>
+<!-- Hero preload -->
+<link as="image" fetchpriority="high" href="../masterclass%20semanal/assets/img/george-ivana-cover.jpg" rel="preload" type="image/jpeg"/>
 <!-- Fontes — pesos reduzidos (axis variável removido = ~30% menor) -->
 <link href="css2_ce01cec6" rel="stylesheet"/>
 <link href="chave/assets/css/style_ae525809.css" rel="stylesheet"/>
@@ -121,7 +120,7 @@ addEventListener('load',function(){var e=location.href,t=document.title,n=Date.n
 <header class="site-header">
 <div class="container header__row">
 <a aria-label="TITAN" class="brand" href="./">
-<img alt="" data-cms-img="logo" height="40" src="chave/assets/img/logo-chave.svg" width="40"/>
+<img alt="" data-cms-img="logo" height="40" src="../masterclass%20semanal/assets/img/marca/logos/outsider-school-gold.svg" width="40"/>
 <span class="brand__name" data-cms="brand-name">TITAN</span>
 </a>
 </div>
@@ -129,13 +128,7 @@ addEventListener('load',function(){var e=location.href,t=document.title,n=Date.n
 <!-- ============ HERO ============ -->
 <section class="hero">
 <div class="hero__media">
-<picture>
-<source data-cms-img="hero-mobile" media="(max-width: 640px)" srcset="chave/assets/img/hero-mobile.avif" type="image/avif"/>
-<source media="(max-width: 640px)" srcset="chave/assets/img/hero-mobile.webp" type="image/webp"/>
-<source srcset="chave/assets/img/hero-2.avif" type="image/avif"/>
-<source srcset="chave/assets/img/hero-2.webp" type="image/webp"/>
-<img alt="Mentor do programa TITAN" data-cms-img="hero-desktop" decoding="async" fetchpriority="high" src="chave/assets/img/hero-2.webp"/>
-</picture>
+<img alt="George e Ivana Soares — TITAN" data-cms-img="hero-desktop" decoding="async" fetchpriority="high" src="../masterclass%20semanal/assets/img/george-ivana-cover.jpg"/>
 </div>
 <div class="hero__overlay"></div>
 <div class="container hero__content">
@@ -160,11 +153,10 @@ addEventListener('load',function(){var e=location.href,t=document.title,n=Date.n
 <div class="container">
 <p class="eyebrow center">Mentorados TITAN já passaram por</p>
 <div class="prova__logos">
-<img alt="Anhanguera" data-cms-img="anhanguera" loading="lazy" src="chave/assets/img/anhanguera.webp"/>
-<img alt="Universidade de Fortaleza" data-cms-img="universidade-de-fortaleza" loading="lazy" src="chave/assets/img/universidade-de-fortaleza.webp"/>
-<img alt="Eduzz" data-cms-img="eduzz" loading="lazy" src="chave/assets/img/eduzz.webp"/>
-<img alt="Kiwify" data-cms-img="kiwify" loading="lazy" src="chave/assets/img/kiwify.webp"/>
-<img alt="ONM" data-cms-img="onm" loading="lazy" src="chave/assets/img/onm.webp"/>
+<img alt="Anhanguera" data-cms-img="anhanguera" loading="lazy" src="../masterclass%20semanal/assets/img/marca/logos/anhanguera.svg"/>
+<img alt="Universidade de Fortaleza" data-cms-img="universidade-de-fortaleza" loading="lazy" src="../masterclass%20semanal/assets/img/marca/logos/universidade-de-fortaleza.svg"/>
+<img alt="Eduzz" data-cms-img="eduzz" loading="lazy" src="../masterclass%20semanal/assets/img/marca/logos/eduzz.svg"/>
+<img alt="Kiwify" data-cms-img="kiwify" loading="lazy" src="../masterclass%20semanal/assets/img/marca/logos/kiwify.svg"/>
 </div>
 </div>
 </section>
@@ -173,7 +165,7 @@ addEventListener('load',function(){var e=location.href,t=document.title,n=Date.n
 <div class="container">
 <div class="two-comma__grid">
 <div class="two-comma__media">
-<img alt="Two Comma Club Award" data-cms-img="two-comma" loading="lazy" src="chave/assets/img/two-comma.webp"/>
+<img alt="George e Ivana Soares — TITAN" data-cms-img="two-comma" loading="lazy" src="../masterclass%20semanal/assets/img/aula-sem-filtro.png"/>
 </div>
 <div class="two-comma__copy">
 <p class="eyebrow">Programa exclusivo</p>
@@ -185,7 +177,7 @@ addEventListener('load',function(){var e=location.href,t=document.title,n=Date.n
 </div>
 </section>
 <!-- ============ DEPOIMENTOS EM VÍDEO ============ -->
-<section class="section depoimentos-video">
+<section class="section depoimentos-video" style="display:none">
 <div class="container container--narrow">
 <header class="section-head">
 <p class="eyebrow">Depoimentos em vídeo</p>
@@ -262,7 +254,7 @@ addEventListener('load',function(){var e=location.href,t=document.title,n=Date.n
 </div>
 </section>
 <!-- ============ RESULTADOS REAIS · DEPOIMENTO PRINTS ============ -->
-<section class="section section--dark resultados">
+<section class="section section--dark resultados" style="display:none">
 <div class="container">
 <header class="section-head">
 <p class="eyebrow">Depoimentos</p>
@@ -286,7 +278,7 @@ addEventListener('load',function(){var e=location.href,t=document.title,n=Date.n
 </div>
 </section>
 <!-- ============ QUEM JÁ PASSOU ============ -->
-<section class="section alunos">
+<section class="section alunos" style="display:none">
 <div class="container">
 <header class="section-head">
 <p class="eyebrow">Mentorados</p>
@@ -480,22 +472,16 @@ addEventListener('load',function(){var e=location.href,t=document.title,n=Date.n
 </header>
 <div class="premiacoes__grid">
 <figure class="premio">
-<img alt="Premiação recebida por mentorado" data-cms-img="premiacao-1" loading="lazy" src="chave/assets/img/premiacao-1.webp"/>
+<img alt="Raquel Jurckovic — premiação recebida" data-cms-img="premiacao-1" loading="lazy" src="../masterclass%20semanal/assets/img/premiacao-raquel.jpg"/>
 </figure>
 <figure class="premio">
-<img alt="Premiação recebida por mentorado" data-cms-img="premiacao-2" loading="lazy" src="chave/assets/img/premiacao-2.webp"/>
+<img alt="Samuel Vergenhassi — premiação recebida" data-cms-img="premiacao-2" loading="lazy" src="../masterclass%20semanal/assets/img/premiacao-samuel.jpg"/>
 </figure>
 <figure class="premio">
-<img alt="Premiação recebida por mentorado" data-cms-img="premiacao-3" loading="lazy" src="chave/assets/img/premiacao-3.webp"/>
+<img alt="Thaty Keller — premiação recebida" data-cms-img="premiacao-3" loading="lazy" src="../masterclass%20semanal/assets/img/premiacao-thaty.jpg"/>
 </figure>
 <figure class="premio">
-<img alt="Premiação recebida por mentorado" data-cms-img="premiacao-4" loading="lazy" src="chave/assets/img/premiacao-4.webp"/>
-</figure>
-<figure class="premio">
-<img alt="Premiação recebida por mentorado" data-cms-img="premiacao-5" loading="lazy" src="chave/assets/img/premiacao-5.webp"/>
-</figure>
-<figure class="premio">
-<img alt="Premiação recebida por mentorado" data-cms-img="premiacao-6" loading="lazy" src="chave/assets/img/premiacao-6.webp"/>
+<img alt="Bruno Amorim — premiação recebida" data-cms-img="premiacao-4" loading="lazy" src="../masterclass%20semanal/assets/img/premiacao-bruno.jpg"/>
 </figure>
 </div>
 </div>
@@ -698,7 +684,7 @@ addEventListener('load',function(){var e=location.href,t=document.title,n=Date.n
 <footer class="footer footer--os">
 <div class="container">
 <div aria-label="TITAN" class="footer-logo">
-<img alt="TITAN" data-cms-img="logo-footer" src="chave/assets/img/OutsiderSchool-logo-completa.svg" style="display:inline-block; vertical-align:middle" width="140"/>
+<img alt="TITAN" data-cms-img="logo-footer" src="../masterclass%20semanal/assets/img/marca/logos/grupo-escala-gold.png" style="display:inline-block; vertical-align:middle" width="140"/>
 </div>
 <p><span data-cms="footer-copyright">Copyright © 2026 — todos os direitos reservados.</span><br/>
     <span data-cms="footer-cnpj">CNPJ: 45.441.456/0001-25 — Fortaleza/CE</span></p>
