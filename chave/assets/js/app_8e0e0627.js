@@ -176,7 +176,7 @@
     };
 
     try {
-      const r = await fetch('api/apply/', {
+      const r = await fetch('https://automate.georgesoares.com.br/webhook-test/funil_aplica', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
@@ -186,19 +186,12 @@
       form.classList.remove('form--loading');
       if (submitBtn && originalText) submitBtn.textContent = originalText;
 
-      if (r.ok && data.ok) {
-        // Redireciona para a página de obrigado correspondente ao faturamento
-        if (data.redirect_to) {
-          window.location.href = data.redirect_to;
-          return;
-        }
-        // Fallback (sem redirect_to na resposta)
+      if (r.ok && data.success) {
         const msg = document.createElement('div');
         msg.className = 'form__success';
         msg.textContent = 'Aplicação recebida! Nosso time vai analisar seu caso e entrar em contato em até 48h.';
         form.appendChild(msg);
         form.reset();
-        // Mostra erros de validação por campo, se vierem
       } else if (r.status === 400 && data.fields) {
         Object.entries(data.fields).forEach(([fieldName, errMsg]) => {
           const input = form.querySelector(`[name="${fieldName}"]`);
