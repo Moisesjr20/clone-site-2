@@ -176,31 +176,35 @@
     };
 
     try {
-      const r = await fetch('https://automate.georgesoares.com.br/webhook-test/funil_aplica', {
+      const r = await fetch('https://automate.georgesoares.com.br/webhook/funil_aplica', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
-      const data = await r.json().catch(() => ({}));
+      await r.json().catch(() => ({}));
 
       form.classList.remove('form--loading');
       if (submitBtn && originalText) submitBtn.textContent = originalText;
 
-      if (r.ok && data.success) {
-        const msg = document.createElement('div');
-        msg.className = 'form__success';
-        msg.textContent = 'Aplicação recebida! Nosso time vai analisar seu caso e entrar em contato em até 48h.';
-        form.appendChild(msg);
-        form.reset();
-      } else if (r.status === 400 && data.fields) {
-        Object.entries(data.fields).forEach(([fieldName, errMsg]) => {
-          const input = form.querySelector(`[name="${fieldName}"]`);
-          if (input) showError(input.closest('.field'), errMsg);
-        });
+      if (r.ok) {
+        var fat = form.faturamento_mensal.value;
+        var destino;
+        if (fat === 'Entre R$ 10.000,00 e R$ 20.000,00') {
+          destino = 'obrigado/index.html?fat=tier1';
+        } else if (
+          fat === 'Entre R$ 20.000,00 e R$ 50.000,00' ||
+          fat === 'Entre R$ 50.000,00 e R$ 100.000,00' ||
+          fat === 'Acima de R$ 100.000,00'
+        ) {
+          destino = 'obrigado/index.html?fat=tier2';
+        } else {
+          destino = 'obrigado/contato/index.html';
+        }
+        window.location.href = destino;
       } else {
         const msg = document.createElement('div');
         msg.className = 'form__fail';
-        msg.textContent = data.error || 'Algo deu errado. Tenta novamente em alguns segundos.';
+        msg.textContent = 'Algo deu errado. Tenta novamente em alguns segundos.';
         form.appendChild(msg);
       }
     } catch (err) {
