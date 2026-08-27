@@ -1,7 +1,7 @@
 {
   "colors": {
     "--bg": "#0a0a0a",
-    "--bg-soft": "#0f0f0f",
+    "--bg-soft": "#111111",
     "--surface": "#151515",
     "--surface-2": "#1e1e1e",
     "--text": "#f5f5f5",
@@ -12,7 +12,7 @@
     "--accent": "#ebd197",
     "--accent-soft": "#f4e1b5",
     "--accent-deep": "#c9ab6b",
-    "--cta": "#22c55e",
+    "--cta": "#27dd6a",
     "--cta-hover": "#16a34a",
     "--cta-fg": "#02120a",
     "--whatsapp": "#25d366",
@@ -25,7 +25,7 @@
     "--radius-lg": "20px",
     "--radius-xl": "28px",
     "cta-texts": [
-      "Quero que minha mentoria",
+      "Quero que comprar consultoria",
       "Quero aplicar o mesmo método",
       "Quero resultados como esses",
       "Quero fazer essa jornada",
@@ -44,7 +44,7 @@
     "--fs-display-lg-max": "3.5rem"
   },
   "copy": {
-    "brand-name": "A CHAVE",
+    "brand-name": "TITAN",
     "hero-eyebrow": "Mentoria de aceleração · 12 meses",
     "hero-h1-line1": "Todo mundo te ensinou a",
     "hero-h1-em": "\"vender todos os dias\"",
@@ -97,7 +97,7 @@
     "onm": null
   },
   "video": {
-    "youtube-id": "27Q7dFhQdJo"
+    "youtube-id": "IiSTXHNisHo"
   },
   "seo": {
     "title": "A Chave · Mentoria de aceleração digital | Outsider School",
